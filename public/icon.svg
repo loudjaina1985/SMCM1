@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="indigoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#4f46e5" flood-opacity="0.18" />
+    </filter>
+  </defs>
+  <!-- Background Rounded Rect -->
+  <rect width="512" height="512" rx="128" fill="url(#indigoGrad)" />
+  
+  <!-- Secondary Glowing Accents -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="24" />
+  <circle cx="256" cy="256" r="130" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="12" />
+
+  <!-- Core Dashboard / Smart Bag Symbol Group -->
+  <g filter="url(#softShadow)" transform="translate(128, 128)">
+    <path d="M40 80 C40 50, 70 40, 128 40 C186 40, 216 50, 216 80 L216 200 C216 230, 186 240, 128 240 C70 240, 40 230, 40 200 Z" fill="#ffffff" />
+    <path d="M128 100 L128 180" stroke="url(#emeraldGrad)" stroke-width="16" stroke-linecap="round" />
+    <path d="M98 120 L158 120" stroke="url(#emeraldGrad)" stroke-width="16" stroke-linecap="round" />
+    <circle cx="128" cy="140" r="16" fill="#1e1b4b" />
+    <path d="M88 40 C88 15, 168 15, 168 40" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="12" stroke-linecap="round" />
+  </g>
+</svg>

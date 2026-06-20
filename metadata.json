@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Smart Commerce Manager",
+  "description": "A professional, commercial-grade manager for products, customers, orders, and invoices with Telegram Bot syncing, multilingual support (Arabic, French, English), and native responsive views.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
