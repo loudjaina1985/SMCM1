@@ -203,7 +203,12 @@ export default function App() {
       const merchantBase64 = params.get('merchant');
       if (merchantBase64) {
         try {
-          const decodedStr = atob(merchantBase64);
+          let decodedStr = '';
+          try {
+            decodedStr = decodeURIComponent(escape(atob(merchantBase64)));
+          } catch {
+            decodedStr = atob(merchantBase64);
+          }
           const parsed = JSON.parse(decodedStr);
           setCustomerStorefrontData(parsed);
         } catch (err) {
